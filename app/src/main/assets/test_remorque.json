@@ -1,0 +1,34 @@
+{
+  "id": "controle_remorque_01",
+  "title": "Contrôle Remorque",
+  "fields": [
+    {
+      "type": "TEXT",
+      "key": "identifiant",
+      "label": "Numéro immobilisation de la remorque",
+      "required": true
+    },
+    {
+      "type": "TEXT",
+      "key": "matricule_uge",
+      "label": "Matricule UGE du rapporteur",
+      "required": true
+    },
+    {
+      "type": "SELECT",
+      "key": "etat_remorque",
+      "label": "État général de la remorque",
+      "required": true,
+      "options": [
+        { "id": "ok", "label": "Bon état" },
+        { "id": "nok", "label": "Usure anormale" }
+      ]
+    },
+    {
+      "type": "PHOTO",
+      "key": "photo_interieur",
+      "label": "Photo de l'intérieur de la remorque",
+      "required": false
+    }
+  ]
+}
